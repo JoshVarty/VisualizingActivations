@@ -8,7 +8,7 @@ This seems like it might be useful as a debugging strategy or sanity check on re
 
 The structure of ResNet-18 looks like: 
 
-![image|443x400](upload://zCAN85pnUPCF7UskecIVgFEb21J.png) 
+![image|443x400](https://i.imgur.com/1g29NJ9.png) 
 
 I've chosen to instrument `conv1`, `conv2_x`, `conv3_x`, `conv4_x`, and `conv5_x`.
 
