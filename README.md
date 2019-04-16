@@ -29,9 +29,6 @@ Trains to an error rate of `0.034486`
 
  - Both train to comparable error rates, despite having what appear to be wildly different activations
  - All of the layers of the untrained model change considerably from where they started
- - The pretrained model's earlier layers don't appear to change much. The first convolutional layer appears to be almost static. Part of me wonders what would happen if we tried to change this with something like "reverse-discriminitive learning rates". What if we used a higher learning rate for earlier layers than later layers. Presumably when using transfer learning this seems like it wouldn't work, after all we're counting on those earlier pre-trained layers to be in a good state. That said, I always read about vanishing gradients and part of me wonders what would happen if we just made the learning rate larger to force the gradients backwards through the network?
-
-
 
 ### Let's Break the Pretrained ResNet-18 Model
 
@@ -50,9 +47,5 @@ Trained with a learning rate of `1` to an error rate of `0.898943`
 ![image|690x457](https://i.imgur.com/O69SBKE.png) 
 
 
-
-
-
-Surprisingly the pretrained model's first layer activations are left almost unchanged, even with larger learning rates. 
 
 The untrained model's weights descend into some kind of pattern. In general it looks like most of the activations are collapsing to values closer to zero.
