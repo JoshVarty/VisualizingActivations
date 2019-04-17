@@ -1,4 +1,4 @@
-# VisualizingWeights
+# Visualizing Activations
 
 Full Notebook: 
 
